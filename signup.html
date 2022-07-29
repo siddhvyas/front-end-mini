@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=S">
+
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/signup_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <title>Welcome to Realvine</title>
+</head>
+
+<body>
+    <div id="load"></div>
+    <div id="unload">
+        <form action="index.html" onsubmit="return validate()">
+            <div id="main">
+                <div>
+                    <span>Realvine Properties</span>
+                </div>
+                <div>
+                    <input type="text" name="fullName" id="fullName" placeholder="Full Name" onblur="validateName()">
+                    <span id="errNode1" class="errNode"></span>
+                </div>
+                <div>
+                    <input type="tel" name="contact" id="contact" placeholder="Phone No" onblur="validateContact()">
+                    <span id="errNode2" class="errNode"></span>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="E-mail" onblur="validateEmail()">
+                    <span id="errNode3" class="errNode"></span>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password" onblur="validatePwd()">
+                </div>
+                <div id="errNode4" class="errNode" style="display: none;">
+                    <span></span>
+                </div>
+                <div>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"
+                        onblur="validateConPwd()">
+                    <span id="errNode5" class="errNode"></span>
+                </div>
+                <div>
+                    <div><a href="index.html"><input type="button" value="Back"></a></div>
+                    <div><input type="submit" value="Sign Up"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

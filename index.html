@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/headfoot_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <title>Realvine - Chose your dream place</title>
+</head>
+
+<body>
+    <div id="load"></div>
+    <div id="unload">
+        <header>
+            <div id="logo">
+                <span style="font-family: 'Roboto Mono', monospace; font-weight:bold;">Realvine Properties</span>
+            </div>
+            <div id="pages">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contacts.html">Contact</a>
+                <a href="signup.html">Signup</a>
+            </div>
+            <hr>
+        </header>
+        <!-- <div id="gradient"></div> -->
+        <main>
+            <div id="listings">
+                <div class="property" onclick="infoToggle(this)">
+                    <div class="photo"><img src="img\img1.jfif" alt="image1"></div>
+                    <div class="block1">
+                        <div class="address">
+                            <img style="padding: 10px;" src="img\home_black_24dp.svg">
+                            <div class="addBlock">
+                                <div><p>59345 Stonewall DR, Plaquemine, LA 70764, USA</p></div>
+                                <div class="click"><span>Click for more info</span></div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div><img id="heart" src="img\favorite_border_black_24dp.svg" alt="favorite border"
+                                    onclick="likeProperty(this)"></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="sqft">
+                            <img src="img\square_foot_black_18dp.svg">
+                            <span>8000 sqft.</span>
+                        </div>
+                        <div class="beds">
+                            <img src="img\bed_FILL1_wght200_GRAD0_opsz24.svg">
+                            <span style="padding: 5px;">4 beds</span>
+                        </div>
+                        <div class="baths">
+                            <img src="img\shower_FILL1_wght300_GRAD0_opsz40.svg">
+                            <span style="padding-top: 10px;">5 baths</span>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="price">
+                            <img height="30px" src="img\currency_rupee_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>100 Cr.</span>
+                        </div>
+                        <div class="rating">
+                            <img height="30px" src="img\star_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>4.8/5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property"  onclick="infoToggle(this)">
+                    <div class="photo"><img src="img\img2.jfif" alt="image2"></div>
+                    <div class="block1">
+                        <div class="address">
+                            <img style="padding: 10px;" src="img\home_black_24dp.svg">
+                            <div class="addBlock">
+                                <div><p>59345 Stonewall DR, Plaquemine, LA 70764, USA</p></div>
+                                <div class="click"><span>Click for more info</span></div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div><img id="heart" src="img\favorite_border_black_24dp.svg" alt="favorite border"
+                                    onclick="likeProperty(this)"></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="sqft">
+                            <img src="img\square_foot_black_18dp.svg">
+                            <span>8000 sqft.</span>
+                        </div>
+                        <div class="beds">
+                            <img src="img\bed_FILL1_wght200_GRAD0_opsz24.svg">
+                            <span style="padding: 5px;">4 beds</span>
+                        </div>
+                        <div class="baths">
+                            <img src="img\shower_FILL1_wght300_GRAD0_opsz40.svg">
+                            <span style="padding-top: 10px;">5 baths</span>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="price">
+                            <img height="30px" src="img\currency_rupee_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>100 Cr.</span>
+                        </div>
+                        <div class="rating">
+                            <img height="30px" src="img\star_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>4.8/5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" onclick="infoToggle(this)">
+                    <div class="photo"><img src="img\img3.jfif" alt="image3"></div>
+                    <div class="block1">
+                        <div class="address">
+                            <img style="padding: 10px;" src="img\home_black_24dp.svg">
+                            <div class="addBlock">
+                                <div><p>59345 Stonewall DR, Plaquemine, LA 70764, USA</p></div>
+                                <div class="click"><span>Click for more info</span></div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div><img id="heart" src="img\favorite_border_black_24dp.svg" alt="favorite border"
+                                    onclick="likeProperty(this)"></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="sqft">
+                            <img src="img\square_foot_black_18dp.svg">
+                            <span>8000 sqft.</span>
+                        </div>
+                        <div class="beds">
+                            <img src="img\bed_FILL1_wght200_GRAD0_opsz24.svg">
+                            <span style="padding: 5px;">4 beds</span>
+                        </div>
+                        <div class="baths">
+                            <img src="img\shower_FILL1_wght300_GRAD0_opsz40.svg">
+                            <span style="padding-top: 10px;">5 baths</span>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="price">
+                            <img height="30px" src="img\currency_rupee_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>100 Cr.</span>
+                        </div>
+                        <div class="rating">
+                            <img height="30px" src="img\star_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>4.8/5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" onclick="infoToggle(this)">
+                    <div class="photo"><img src="img\img4.jfif" alt="image4"></div>
+                    <div class="block1">
+                        <div class="address">
+                            <img style="padding: 10px;" src="img\home_black_24dp.svg">
+                            <div class="addBlock">
+                                <div><p>59345 Stonewall DR, Plaquemine, LA 70764, USA</p></div>
+                                <div class="click"><span>Click for more info</span></div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div><img id="heart" src="img\favorite_border_black_24dp.svg" alt="favorite border"
+                                    onclick="likeProperty(this)"></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="sqft">
+                            <img src="img\square_foot_black_18dp.svg">
+                            <span>8000 sqft.</span>
+                        </div>
+                        <div class="beds">
+                            <img src="img\bed_FILL1_wght200_GRAD0_opsz24.svg">
+                            <span style="padding: 5px;">4 beds</span>
+                        </div>
+                        <div class="baths">
+                            <img src="img\shower_FILL1_wght300_GRAD0_opsz40.svg">
+                            <span style="padding-top: 10px;">5 baths</span>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="price">
+                            <img height="30px" src="img\currency_rupee_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>100 Cr.</span>
+                        </div>
+                        <div class="rating">
+                            <img height="30px" src="img\star_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>4.8/5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" onclick="infoToggle(this)">
+                    <div class="photo"><img src="img\img5.jfif" alt="image5"></div>
+                    <div class="block1">
+                        <div class="address">
+                            <img style="padding: 10px;" src="img\home_black_24dp.svg">
+                            <div class="addBlock">
+                                <div><p>59345 Stonewall DR, Plaquemine, LA 70764, USA</p></div>
+                                <div class="click"><span>Click for more info</span></div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div><img id="heart" src="img\favorite_border_black_24dp.svg" alt="favorite border"
+                                    onclick="likeProperty(this)"></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="sqft">
+                            <img src="img\square_foot_black_18dp.svg">
+                            <span>8000 sqft.</span>
+                        </div>
+                        <div class="beds">
+                            <img src="img\bed_FILL1_wght200_GRAD0_opsz24.svg">
+                            <span style="padding: 5px;">4 beds</span>
+                        </div>
+                        <div class="baths">
+                            <img src="img\shower_FILL1_wght300_GRAD0_opsz40.svg">
+                            <span style="padding-top: 10px;">5 baths</span>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="price">
+                            <img height="30px" src="img\currency_rupee_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>100 Cr.</span>
+                        </div>
+                        <div class="rating">
+                            <img height="30px" src="img\star_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>4.8/5.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" onclick="infoToggle(this)">
+                    <div class="photo"><img src="img\img6.jfif" alt="image6"></div>
+                    <div class="block1">
+                        <div class="address">
+                            <img style="padding: 10px;" src="img\home_black_24dp.svg">
+                            <div class="addBlock">
+                                <div><p>59345 Stonewall DR, Plaquemine, LA 70764, USA</p></div>
+                                <div class="click"><span>Click for more info</span></div>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <div><img id="heart" src="img\favorite_border_black_24dp.svg" alt="favorite border"
+                                    onclick="likeProperty(this)"></div>
+                        </div>
+                    </div>
+                    <div class="block2">
+                        <div class="sqft">
+                            <img src="img\square_foot_black_18dp.svg">
+                            <span>8000 sqft.</span>
+                        </div>
+                        <div class="beds">
+                            <img src="img\bed_FILL1_wght200_GRAD0_opsz24.svg">
+                            <span style="padding: 5px;">4 beds</span>
+                        </div>
+                        <div class="baths">
+                            <img src="img\shower_FILL1_wght300_GRAD0_opsz40.svg">
+                            <span style="padding-top: 10px;">5 baths</span>
+                        </div>
+                    </div>
+                    <div class="block3">
+                        <div class="price">
+                            <img height="30px" src="img\currency_rupee_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>100 Cr.</span>
+                        </div>
+                        <div class="rating">
+                            <img height="30px" src="img\star_FILL1_wght400_GRAD0_opsz24.svg">
+                            <span>4.8/5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="moto">
+                <h3 id="foot-name" style="font-family: 'Roboto Mono', monospace; font-weight:bold;">Realvine Properties
+                </h3>
+                <p>A great place to buy, sell or rent your properties without any agent or commision.</p>
+            </div>
+            <div id="company-about">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#listings">Listings</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                </ul>
+            </div>
+            <div id="links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Pricing</li>
+                    <li>Feedback</li>
+                </ul>
+            </div>
+            <div id="rights">
+                <span>&copy; 2022 Realvine. All Rights Reserved by Siddh Vyas.</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

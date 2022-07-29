@@ -1,0 +1,86 @@
+body{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+#main{
+    height: 80vh;
+    width: 30%;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto;
+    box-shadow: 0 2px 18px rgba(51, 51, 51, 1);
+    background-color: white;
+}
+#main>div:first-child>span{
+    font-family: 'Roboto Mono', monospace; 
+    font-size: large;
+    font-weight:bold;
+}
+
+#main>div:first-child{
+    padding-top: 30px;
+    padding-bottom: 0%;
+}
+
+#main>div:last-child{
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 12vw; */
+}
+
+#main>div{
+    /* border: 2px solid red; */
+    height: 20%;
+}
+
+#main>div{
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+input:not([type='submit']):not([type='button']){
+    height: 4vh;
+    width: 20vw;
+}
+
+input[type=submit], input[type='button']{
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0px 40px;
+}
+
+input[type=submit]:hover, input[type='button']:hover{
+    background-color: black;
+    color: white;
+}
+.errNode{
+    height: 1vh;
+    width: 15vw;
+    margin-top: 1px;
+    display: block;
+    color: red;
+}
+
+/* .details{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.details>label {
+    font-weight: lighter;
+}
+
+input[type=text], input[type=email]{
+    width: 50%;
+    padding-left: 100px;
+    align-items: center;
+    border-radius: 5px;
+} */

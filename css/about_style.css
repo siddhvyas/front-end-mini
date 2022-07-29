@@ -1,0 +1,30 @@
+main>div p{
+    height: 20vh;
+    margin: 7vh 2vw;
+    font-size: 20px;
+    color: rgb(46, 44, 44);
+    text-align: center;
+}
+
+main>div>h2{
+    margin: 10vh 10vw;
+    text-align: center;
+}
+
+#block, #block1, #block2{
+    display: flex;
+    margin: 50px 20px;
+}
+
+button{
+    align-self: center;
+    height: 7vh;
+    width: 10vw;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}

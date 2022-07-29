@@ -1,0 +1,88 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    height: 75vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 35%;
+}
+
+.formHead{
+    padding: 20px 0px;
+}
+.formHead p{
+    padding-top: 10px;
+}
+
+.left-block{
+    display: grid;
+    height: fit-content;
+    grid-template-rows: auto auto auto;
+}
+
+.left-block h2, .left-block p{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contact-info{
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.right-block{
+    padding-left: 2vw;
+    padding-bottom: 2vw;
+    box-shadow: 0 2px 18px rgba(51, 51, 51, 1);
+}
+
+.form-block{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.details{
+    height: 15vh;
+    width: 100%;
+}
+
+.details>label {
+    font-weight: lighter;
+}
+
+input[type=text], input[type=email]{
+    width: 70%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.errNode{
+    height: 1vh;
+    width: 15vw;
+    margin-top: 1px;
+    display: block;
+    color: red;
+}
+
+textarea{
+    width: 70%;
+    height: 10vh;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,43 @@
+// function likeProperty(){
+//     if (document.getElementById("heart").src == 'http://127.0.0.1:5500/img/favorite_border_black_24dp.svg'){
+//         document.getElementById("heart").src = 'img/favorite_black_24dp.svg';
+//     }
+//     else {
+//         document.getElementById("heart").src = 'img/favorite_border_black_24dp.svg'
+//     }
+//     console.log(typeof(document.getElementById("heart").src));
+// }
+
+document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         document.getElementById('unload').style.visibility="hidden";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('interactive');
+           document.getElementById('load').style.visibility="hidden";
+           document.getElementById('unload').style.visibility="visible";
+        },1000);
+    }
+}
+
+function likeProperty(source){
+    if (source.src == 'http://127.0.0.1:5500/img/favorite_border_black_24dp.svg'){
+        source.src = 'img/favorite_black_24dp.svg';
+    }
+    else{
+        source.src = 'img/favorite_border_black_24dp.svg';
+    }
+    console.log(source)
+}
+
+function infoToggle(source){
+    let blocks = source.childNodes;
+    if (blocks[5].style.display == "" || blocks[5].style.display == 'none') {
+        blocks[5].style.display = "grid";
+        blocks[7].style.display = "grid";
+    } else {
+        blocks[5].style.display = "none";
+        blocks[7].style.display = "none";
+    }
+}
