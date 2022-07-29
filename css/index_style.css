@@ -35,7 +35,6 @@
     display: grid; 
     height: 13vh; 
     width: 22vw;
-    /* border: 1px solid black; */
     grid-template-columns: 80% 20%;
 }
 .block2{
@@ -83,6 +82,8 @@
 .click{
     margin-top: 15px;
     margin-left: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 .click>span{
     font-weight: bold;
