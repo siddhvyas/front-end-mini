@@ -31,13 +31,25 @@ function likeProperty(source){
     console.log(source)
 }
 
-function infoToggle(source){
-    let blocks = source.childNodes;
-    if (blocks[5].style.display == "" || blocks[5].style.display == 'none') {
-        blocks[5].style.display = "grid";
-        blocks[7].style.display = "grid";
-    } else {
-        blocks[5].style.display = "none";
-        blocks[7].style.display = "none";
+function showInfo(source){
+    let block1 = source.nextSibling.nextSibling;
+    let block2 = source.nextSibling.nextSibling.nextSibling.nextSibling;
+    if (block1.style.display == "" || block1.style.display == 'none') {
+        block1.style.display = "grid";
+        block2.style.display = "grid";
+        source.style.display = "none";
+    }
+}
+
+function hideInfo(source){
+    if (source.className == "block2"){
+        source.style.display = "none";
+        source.nextSibling.nextSibling.style.display = "none";
+        source.previousSibling.previousSibling.style.display = "";
+    }
+    else if (source.className == "block3"){
+        source.style.display = "none";
+        source.previousSibling.previousSibling.style.display = "none";
+        source.previousSibling.previousSibling.previousSibling.previousSibling.style.display = "";
     }
 }
