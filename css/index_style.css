@@ -35,7 +35,7 @@
     display: grid; 
     height: 13vh; 
     width: 22vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     grid-template-columns: 80% 20%;
 }
 .block2{
